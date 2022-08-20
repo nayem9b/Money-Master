@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="text-5xl font-semibold text-center mt-8 text-sky-400">Money Master</h1>
+    <section>
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto pt-10">
+            <img class="money-img" src="images/money.jpg" alt="image of money">
+
+                                        <!-- INCOME -->
+
+            <div class="bg-slate-100">
+                <h1 class="text-xl font-bold text-center mt-5">Income</h1>
+                <div class="flex mt-8 ml-12"> 
+                <h2 class="text-lg">Income:</h2>
+                <input type="text" placeholder="Type here" class="input input-bordered input-accent w-full max-w-xs ml-5 p-2" id="income"/>
+               </div> 
+
+                                       <!-- EXPENSE -->
+
+
+                <h1 class="text-xl font-bold text-center mt-8">Expenses</h1>
+
+                                         <!-- FOOD -->
+                <div class="flex mx-auto mt-8 ml-12"> 
+                 <h2 class="text-lg" >Food:</h2>
+                 <input type="text" placeholder="Type here" class="input input-bordered input-accent w-full max-w-xs ml-5 mx-auto p-2" id="food" on />
+                </div> 
+                                         <!-- RENT  -->
+
+                <div class="flex mx-auto mt-8 ml-12"> 
+                 <h2 class="text-lg" >Rent:</h2>
+                 <input type="text" placeholder="Type here" class="input input-bordered input-accent w-full max-w-xs ml-5 mx-auto p-2" id="rent" />
+                </div> 
+
+                                         <!-- CLOTHS  -->
+                <div class="flex mx-auto mt-8 ml-12"> 
+                 <h2 class="text-lg" >Cloths:</h2>
+                 <input type="text" placeholder="Type here" class="input input-bordered input-accent w-full max-w-xs ml-5 mx-auto p-2" id="cloth"/>
+                </div> 
+
+                                       <!-- CALCULATE BUTTON -->
+                <button class="bg-sky-500 hover:bg-sky-700 text-white rounded p-2 mx-10" id="expense-calculate">
+                    Calculate
+                  </button>  
+
+
+                  <h1 class="text-xl font-bold text-center mt-5">Total Expenses : <span id="total-expense"> 0</span></h1>
+                  <h1 class="text-xl font-bold text-center mt-5">Balance : <span id="balance">0</span></h1>
+
+
+                  <div class="flex mx-auto">
+                       <div class="flex mx-auto mt-8 ml-12"> 
+                        <h2 class="text-lg">Save:</h2>
+                        <input type="text" placeholder="Type here" class="input input-bordered input-accent ml-5 p-2" id="savings" />
+                        <h1 class="ml-8"> %</h1>
+                        <button class="bg-sky-500 hover:bg-sky-700 text-white rounded p-2 mx-10" id="saving-calculate">
+                            Calculate
+                          </button>
+                       </div> 
+                  
+                  </div>
+                  <h1 class="text-xl font-bold text-center mt-5">Saving Amount : <span id="saving-amount"> 0</span></h1>
+                  <h1 class="text-xl font-bold text-center mt-5">Remaining Balance : <span id="remaining-balance">0</span></h1>
+            </div>
+        </div>
+    </section>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
